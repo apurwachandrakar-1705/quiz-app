@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.error_line {
+  color: #f44336; /* Red color for error text */
+  font-size: 14px; /* Set font size */
+  margin-top: 5px; /* Add space above the error text */
+  font-weight: bold; /* Make the error message stand out */
+  display: inline-block; /* Ensure the error message doesn't break onto a new line unless needed */
+}

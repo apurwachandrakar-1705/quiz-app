@@ -1,0 +1,134 @@
+/* Root container for the GamePage */
+.quiz-game {
+    background-color: #2e2e2e; /* Dark background */
+    color: #fff; /* White text */
+    min-height: 100vh; /* Full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Main quiz container */
+.quiz-container {
+    background-color: #1e1e1e; /* Slightly lighter background */
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Quiz question styling */
+.quiz-question {
+    margin-bottom: 20px;
+}
+
+.quiz-question h2 {
+    font-size: 2rem;
+    color: #4caf50; /* Green for the question header */
+    margin-bottom: 10px;
+}
+
+.quiz-question p {
+    font-size: 1.4rem;
+    color: #ddd; /* Light gray text for the question */
+}
+
+/* Option buttons styling */
+.option-button {
+    display: block;
+    width: 100%; /* Full-width buttons */
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #4caf50; /* Green background */
+    color: #000; /* Black text */
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.option-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: translateY(-3px); /* Slight lift */
+}
+
+.option-button:active {
+    transform: translateY(0); /* Reset lift on click */
+}
+
+/* Restart button styling */
+.restart-button {
+    padding: 15px 30px;
+    background-color: #008cba; /* Blue button */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.restart-button:hover {
+    background-color: #0077a3; /* Darker blue on hover */
+}
+
+/* End screen styling */
+.quiz-end {
+    text-align: center;
+}
+
+.quiz-end h2 {
+    font-size: 2.5rem;
+    color: #4caf50;
+    margin-bottom: 15px;
+}
+
+.quiz-end p {
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* Error message styling */
+.error_line {
+    color: #f44336; /* Red text for errors */
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 20px;
+}
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #2e2e2e; /* Optional: Background color to match the quiz theme */
+}
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .quiz-container {
+        padding: 20px;
+    }
+
+    .quiz-question h2 {
+        font-size: 1.8rem;
+    }
+
+    .quiz-question p {
+        font-size: 1.2rem;
+    }
+
+    .option-button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .restart-button {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+}

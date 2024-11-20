@@ -1,0 +1,32 @@
+.start_game_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically */
+  height: 100vh; /* Full viewport height */
+  background-color: #f0f8ff; /* Light background color */
+  text-align: center; /* Centers text */
+}
+
+.start_game_page h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px; /* Adds space between the heading and button */
+}
+
+.start_game_page .btn {
+  display: flex;
+  align-items: center; /* Centers icon and text vertically */
+  gap: 10px; /* Adds space between the icon and text */
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: 2px solid #28a745; /* Green border */
+  color: #28a745; /* Green text */
+  background-color: transparent; /* Transparent background */
+  transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+.start_game_page .btn:hover {
+  background-color: #28a745; /* Green background */
+  color: #ffffff; /* White text */
+}
